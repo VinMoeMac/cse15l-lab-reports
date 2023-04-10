@@ -28,7 +28,8 @@
 - pwd
 
 ```
-- In the following screenshot I tried `ls -lat` and `pwd`
+- In the following screenshot I tried `ls -lat` and `pwd` (FYI I am not running it from the cs account because it says that the account is closed by remote host)
+
 ![Image](command.png)
 
 You can try any number of commands at the terminal and see what they do!
