@@ -17,5 +17,14 @@
 - Input the password in the terminal and you will remote connect.
 
 ## Step 3: Trying Some Commands.
-
-
+- Now the final step is to try some commands in the console.
+- Here is a few you could try:
+```
+- cd ~
+- cd
+- ls -lat
+- ls -a
+- pwd
+```
+- In the following screenshot I tried `ls -lat` and `pwd`
+![Image](command.png)
