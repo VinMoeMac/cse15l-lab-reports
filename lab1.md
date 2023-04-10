@@ -20,11 +20,15 @@
 - Now the final step is to try some commands in the console.
 - Here is a few you could try:
 ```
+
 - cd ~
 - cd
 - ls -lat
 - ls -a
 - pwd
+
 ```
 - In the following screenshot I tried `ls -lat` and `pwd`
 ![Image](command.png)
+
+You can try any number of commands at the terminal and see what they do!
