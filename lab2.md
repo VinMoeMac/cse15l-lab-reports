@@ -1,9 +1,56 @@
 # CS15l Lab Report 2
-## Part 1: Installing VScode
-- To install VScode the first thing you must do is go to the VScode website [here](https://code.visualstudio.com/).
-- The page should look like this:
+## Part 1
 
-![Image](vscodescreen.png)
+Here is the code for StringSearch
+
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    String str="";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                str += parameters[1]+"\n";
+                return str;
+            }
+        }
+        return "404 Not Found!";
+        
+        
+    }
+}
+
+class StringSearch {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+
+![Image](labreport2_1.png)
+
+- In this case it is the `handleRequest` method being called and within that getPath(), contains and getQuery are also being called
+- The argument for the `handleRequest` (the only method with arguments) method is the url itself and then there are two relevant fields: `str` and `parameters`
+- `str` is first initiated and set to "" before the method is run and then the method changes it's value to "hello"+"\n".
+- `parameters` is a string array initiated in the method with its two elements being from the query: "s" and "hello". 
+
+![Image](labreport2_2.png)
+
+- In this case the same methods and fields are present, but the fields are different values.
+- `str` is equal to "hello"+"\n" before the url is inputted and then it is changed to "hello"+"\n"+"hi"
+- `parameters` is a string array initiated in the method with its two elements being from the query: "s" and "hi".
+
 
 - Press the download button for whichever operating system you are using and you should be able to open and use it.
 
