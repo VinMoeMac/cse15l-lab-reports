@@ -61,9 +61,10 @@ This is one test to showcase the failure inducing input (`input1`)
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 5, 4, 3 }, input1);
   }
+  
 ```
-Another test to showcase a non failure inducing input (`input2`)
 
+Another test to showcase a non failure inducing input (`input2`)
 ```
 @Test  
   public void testReverseInPlace2() {
@@ -73,7 +74,9 @@ Another test to showcase a non failure inducing input (`input2`)
   }
 ```
 
+Running the Junit test responds with this:
 
+![Image](labreport2_3.png)
 
 
 My new code to make it work is this:
