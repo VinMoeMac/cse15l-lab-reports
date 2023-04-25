@@ -101,4 +101,4 @@ static void reverseInPlace(int[] arr) {
 ```
 
 ## Part 3
-I came in with little to no experience related to like web development, so the idea of setting up a server is really interesting to me. 
+I came in with little to no experience related to like web development, so the idea of setting up a server is really interesting to me. I find the idea of queries fascinating and am interested to see the way in which they could be used in more complicated ways. Generally it is just interesting to take a peak under the hood to see how these things really work.
