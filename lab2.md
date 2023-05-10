@@ -100,5 +100,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
+This old code did not work because the method was only changing the first half of the array, because the loop only iterates through half of the list. To get both sides to change  and put the array in reverse I use a temp variable to store the value being changed at i and then set the element at the other end of the array to the temporary variable. The element at index is being changed the same way.
+
 ## Part 3
 I came in with little to no experience related to like web development, so the idea of setting up a server is really interesting to me. I find the idea of queries fascinating and am interested to see the way in which they could be used in more complicated ways. Generally it is just interesting to take a peak under the hood to see how these things really work.
