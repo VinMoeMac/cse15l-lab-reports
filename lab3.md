@@ -2,7 +2,7 @@
 # grep -i -r [https://chat.openai.com/]()
 
 ```
-[cs15lsp23km@ieng6-201]:technical:90$ grep -i -r "big " 911report/
+[cs15lsp23km@ieng6-201]:technical:90$ grep -i -r "BIG " 911report/
 911report/chapter-1.txt:    Manager, New York Center: We have several situations going on here. It's escalating big, big time. We need to get the military involved with us. . . . We're, we're involved with something else, we have other aircraft that may have a similar situation going on here.
 911report/chapter-11.txt:                dealing with the al Qida threat? . . . Is al Qida a big deal?" One school of     
 911report/chapter-13.4.txt:                is not Serbo-Croatian for "big bang," as has been widely reported, but rather a
@@ -16,9 +16,9 @@
 911report/chapter-7.txt:                that others in Abdullah's circle may have received word that something big would  
 911report/chapter-8.txt:                very, very" big was about to happen, and most of Bin Ladin's network was reportedly
 ```
-- In this first command I use `grep` and the options `-i` (non case sensitive) and `-r` (search recursively through a directory and subdirectories) to find every line containing "big " without case sensitivity in the txt files from the 911report directory and print them alongside the name of the file it is from.
+- In this first command I use `grep` and the options `-i` (non case sensitive) and `-r` (search recursively through a directory and subdirectories) to find every line containing "BIG " without case sensitivity in the txt files from the 911report directory and print them alongside the name of the file it is from.
 ```
-[cs15lsp23km@ieng6-201]:technical:92$ grep -i -r "alone " 911report/
+[cs15lsp23km@ieng6-201]:technical:92$ grep -i -r "ALONE " 911report/
 911report/chapter-13.3.txt:            4. On the process of identification, see Joseph Malone interview (May 25, 2004).   
 911report/chapter-13.4.txt:                continue at its current pace, let alone increase the operational tempo. On Tenet
 911report/chapter-13.5.txt:                however, Binalshibh has mentioned only one meeting and has claimed he alone met with
@@ -35,7 +35,7 @@
 911report/chapter-7.txt:            On July 30, Shehri traveled alone from Fort Lauderdale to Boston. He flew to San      
 911report/chapter-7.txt:                and give regards to KSM. Jarrah alone appears to have left a written farewell-a 
 ```
-- In this second command I use `grep` and the options `-i` (non case sensitive) and `-r` (search recursively through a directory and subdirectories) to find every line containing "alone " without case sensitivity in the txt files from the 911report directory and print them alongside the name of the file it is from.
+- In this second command I use `grep` and the options `-i` (non case sensitive) and `-r` (search recursively through a directory and subdirectories) to find every line containing "ALONE " without case sensitivity in the txt files from the 911report directory and print them alongside the name of the file it is from.
 
 # grep -l -r [https://chat.openai.com/]()
 ```
@@ -168,4 +168,24 @@ plos/journal.pbio.0030127.txt:        aggregate in super-swarms that can reach a
 ```
 - This is another use of `-v` to search the same file for lines absent of " ". Because there is only one line without a space it prints that one line.
 
+## Chat-GPT citation:
+- I asked Chat-GPT "command line options for grep"
 
+- It responded with: 
+---
+The grep command provides several command line options that allow you to modify its behavior and customize the output. Here are some commonly used options for the grep command:
+
+-i or --ignore-case: Ignores case distinctions in both the pattern and the input files. With this option, grep will match patterns regardless of whether they are in uppercase or lowercase.
+
+-r or --recursive: Searches for the pattern recursively in directories and their subdirectories. This option is useful when you want to search for a pattern in multiple files within a directory tree.
+
+-l or --files-with-matches: Only displays the names of files that contain the pattern but does not print the matching lines. This option is handy when you want to identify files that contain a specific pattern.
+
+-v or --invert-match: Inverts the matching logic. Instead of displaying lines that match the pattern, grep will display lines that do not match the pattern. This is useful when you want to exclude certain lines from the output.
+
+-n or --line-number: Prefixes each line of output with the line number within its input file. This option is helpful when you want to know the line numbers of matching lines.
+
+-w or --word-regexp: Matches only whole words that match the pattern. It ensures that the pattern is not part of a larger word.
+
+---
+- I used this response to guide the commands I used for grep in the lab report. Chat GPT was only used to explain what the commands do, but I did all the commands by myself in VSCODE referencing the files that were given.
