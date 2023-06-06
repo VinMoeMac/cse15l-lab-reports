@@ -74,7 +74,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
 
 ## TA Response
 Hello,
-Considering that your problem relates to how long the merge function is running it is important to ensure that if a while loop is in your program that it is being broken
+Considering that your problem relates to how long the merge function is running it is important to ensure that if a while loop is in your program that it is being terminated at some point.
 
 ## Fix
 Prior to the fix the code for merge looked like this:
@@ -157,4 +157,7 @@ Now running grade.sh returns this:
 # Part 2
 
 ## Reflection 
-In this last half of the quarter I have learned a lot about bash scripts which I find to be a very useful for running things easier. I think there interesting, but a little tedious sometimes.
+In this last half of the quarter I have learned a lot about bash scripts which I find to be a very useful for running things easier. I still struggle a bit writing them but I found them useful when necessary. Sometimes they are a bit tedious and unneccessary though.
+
+# Reference
+- I used code from the skill demo 2 files to complete this assignment as it suggested in the lab report instructions.
